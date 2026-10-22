@@ -2,6 +2,10 @@
 
 A small full-stack tool that checks whether a website has Google Analytics, Google Tag Manager, and a cookie consent tool installed, and how fast the page loads.
 
+![Tag Health Checker dashboard](docs/dashboard.png)
+![Tag Health Checker dashboard continued](docs/dashboard2.png)
+
+
 ## Why I built it
 
 I wanted a practical feel for how websites collect analytics data and handle user consent, and to learn TypeScript, Node.js, and Vue by building something real rather than only following tutorials.
@@ -30,23 +34,34 @@ Results show as color-coded cards, plus a history table and a load-time chart fo
 
 ## Running it locally
 
-You'll need Node.js installed.
+You'll need [Node.js](https://nodejs.org) installed.
 
-**Backend**
+**1. Start the backend**
+
+```bash
 cd server
 npm install
 npm run dev
+```
+
 Runs at http://localhost:3000
 
-**Frontend** (in a second terminal)
+**2. Start the frontend** (in a second terminal)
+
+```bash
 cd client
 npm install
 npm run dev
+```
+
 Opens at http://localhost:5173
 
-**Tests**
+**3. Run the tests**
+
+```bash
 cd server
 npm test
+```
 
 
 ## Limitations
