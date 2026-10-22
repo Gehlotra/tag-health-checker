@@ -14,7 +14,7 @@ I wanted a practical feel for how websites collect analytics data and handle use
 
 - **Google Analytics 4 (GA4):** looks for Google's gtag script and GA4 measurement IDs
 - **Google Tag Manager (GTM):** looks for the GTM script or container ID
-- **Consent tool:** looks for common consent management platforms (OneTrust, Cookiebot, TrustArc, Osano, and others)
+- **Consent tool:** looks for common consent management platforms
 - **Load time:** measures how long the page takes to download
 
 Results show as color-coded cards, plus a history table and a load-time chart for every site checked.
@@ -69,12 +69,8 @@ npm test
 This tool only reads a page's original HTML. That means:
 
 - Tags loaded later by JavaScript (for example, GA4 loaded through Tag Manager) can be missed.
-- It can tell whether a consent tool **exists**, but not whether it actually **works**, meaning whether tracking stops after a visitor clicks "Reject."
+- It can tell whether a consent tool exists, but not whether it actually works, meaning whether tracking stops after a visitor clicks Reject.
 
-## Next steps
-
-- Use Playwright to load pages in a real browser, simulate accepting and rejecting consent, and record which tags actually fire
-- Add Docker so the whole project runs with one command
 
 ## What I learned
 
